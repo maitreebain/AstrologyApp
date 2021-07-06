@@ -111,9 +111,7 @@
 			children = (
 				808839E42693EDC100B3A0BE /* AppDelegate.swift */,
 				808839E62693EDC100B3A0BE /* SceneDelegate.swift */,
-				8073AE662694B25E00A5780C /* UserModel.swift */,
-				8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */,
-				8073AE6E2694B26C00A5780C /* AstrologyModel.swift */,
+				80AA58152694D544008CC150 /* Models + APIClients */,
 				808839E82693EDC100B3A0BE /* SignViewController.swift */,
 				8073AE562694A3EB00A5780C /* TypesViewController.swift */,
 				8073AE5D2694A44700A5780C /* DetailViewController.swift */,
@@ -141,6 +139,16 @@
 				80883A082693EDC300B3A0BE /* Info.plist */,
 			);
 			path = "Astrology AppUITests";
+			sourceTree = "<group>";
+		};
+		80AA58152694D544008CC150 /* Models + APIClients */ = {
+			isa = PBXGroup;
+			children = (
+				8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */,
+				8073AE662694B25E00A5780C /* UserModel.swift */,
+				8073AE6E2694B26C00A5780C /* AstrologyModel.swift */,
+			);
+			path = "Models + APIClients";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
