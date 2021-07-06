@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE562694A3EB00A5780C /* TypesViewController.swift */; };
+		8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE5D2694A44700A5780C /* DetailViewController.swift */; };
 		808839E52693EDC100B3A0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E42693EDC100B3A0BE /* AppDelegate.swift */; };
 		808839E72693EDC100B3A0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E62693EDC100B3A0BE /* SceneDelegate.swift */; };
-		808839E92693EDC100B3A0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E82693EDC100B3A0BE /* ViewController.swift */; };
+		808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E82693EDC100B3A0BE /* SignViewController.swift */; };
 		808839EC2693EDC100B3A0BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808839EA2693EDC100B3A0BE /* Main.storyboard */; };
 		808839EE2693EDC200B3A0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808839ED2693EDC200B3A0BE /* Assets.xcassets */; };
 		808839F12693EDC200B3A0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808839EF2693EDC200B3A0BE /* LaunchScreen.storyboard */; };
@@ -35,10 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8073AE562694A3EB00A5780C /* TypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
+		8073AE5D2694A44700A5780C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		808839E12693EDC100B3A0BE /* Astrology App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astrology App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808839E42693EDC100B3A0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808839E62693EDC100B3A0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		808839E82693EDC100B3A0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		808839E82693EDC100B3A0BE /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		808839EB2693EDC100B3A0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		808839ED2693EDC200B3A0BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		808839F02693EDC200B3A0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,7 +105,9 @@
 			children = (
 				808839E42693EDC100B3A0BE /* AppDelegate.swift */,
 				808839E62693EDC100B3A0BE /* SceneDelegate.swift */,
-				808839E82693EDC100B3A0BE /* ViewController.swift */,
+				808839E82693EDC100B3A0BE /* SignViewController.swift */,
+				8073AE562694A3EB00A5780C /* TypesViewController.swift */,
+				8073AE5D2694A44700A5780C /* DetailViewController.swift */,
 				808839EA2693EDC100B3A0BE /* Main.storyboard */,
 				808839ED2693EDC200B3A0BE /* Assets.xcassets */,
 				808839EF2693EDC200B3A0BE /* LaunchScreen.storyboard */,
@@ -258,7 +264,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				808839E92693EDC100B3A0BE /* ViewController.swift in Sources */,
+				8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */,
+				808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */,
+				8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */,
 				808839E52693EDC100B3A0BE /* AppDelegate.swift in Sources */,
 				808839E72693EDC100B3A0BE /* SceneDelegate.swift in Sources */,
 			);
