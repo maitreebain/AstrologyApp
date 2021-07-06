@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE562694A3EB00A5780C /* TypesViewController.swift */; };
 		8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE5D2694A44700A5780C /* DetailViewController.swift */; };
+		8073AE672694B25E00A5780C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE662694B25E00A5780C /* UserModel.swift */; };
+		8073AE6F2694B26C00A5780C /* AstrologyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE6E2694B26C00A5780C /* AstrologyModel.swift */; };
+		8073AE742694C6D800A5780C /* AstrologyAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */; };
 		808839E52693EDC100B3A0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E42693EDC100B3A0BE /* AppDelegate.swift */; };
 		808839E72693EDC100B3A0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E62693EDC100B3A0BE /* SceneDelegate.swift */; };
 		808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839E82693EDC100B3A0BE /* SignViewController.swift */; };
@@ -39,6 +42,9 @@
 /* Begin PBXFileReference section */
 		8073AE562694A3EB00A5780C /* TypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
 		8073AE5D2694A44700A5780C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8073AE662694B25E00A5780C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		8073AE6E2694B26C00A5780C /* AstrologyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyModel.swift; sourceTree = "<group>"; };
+		8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyAPIClient.swift; sourceTree = "<group>"; };
 		808839E12693EDC100B3A0BE /* Astrology App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Astrology App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		808839E42693EDC100B3A0BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		808839E62693EDC100B3A0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 			children = (
 				808839E42693EDC100B3A0BE /* AppDelegate.swift */,
 				808839E62693EDC100B3A0BE /* SceneDelegate.swift */,
+				8073AE662694B25E00A5780C /* UserModel.swift */,
+				8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */,
+				8073AE6E2694B26C00A5780C /* AstrologyModel.swift */,
 				808839E82693EDC100B3A0BE /* SignViewController.swift */,
 				8073AE562694A3EB00A5780C /* TypesViewController.swift */,
 				8073AE5D2694A44700A5780C /* DetailViewController.swift */,
@@ -264,10 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8073AE742694C6D800A5780C /* AstrologyAPIClient.swift in Sources */,
 				8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */,
 				808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */,
 				8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */,
+				8073AE6F2694B26C00A5780C /* AstrologyModel.swift in Sources */,
 				808839E52693EDC100B3A0BE /* AppDelegate.swift in Sources */,
+				8073AE672694B25E00A5780C /* UserModel.swift in Sources */,
 				808839E72693EDC100B3A0BE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
