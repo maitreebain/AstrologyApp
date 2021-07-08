@@ -10,24 +10,20 @@ import XCTest
 
 class Astrology_AppTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testGettingBackZodiac() {
+        
+        let sign = "Gemini"
+        
+        AstrologyAPIClient().getSign(for: sign) { (result) in
+            
+            switch result {
+            case .success(let item):
+                XCTAssertEqual(sign, item.sunsign, "it worked")
+            case .failure(let error):
+                print("could not access link: \(error)")
+            }
         }
+    
     }
 
 }

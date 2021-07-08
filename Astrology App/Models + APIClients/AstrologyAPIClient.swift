@@ -10,7 +10,7 @@ import Foundation
 
 struct AstrologyAPIClient {
     
-    func getSign(sign: String, completion: @escaping (Result<AstrologyModel, Error>) -> ()) {
+    func getSign(for sign: String, completion: @escaping (Result<AstrologyModel, Error>) -> ()) {
         
         let endpoint = "http://sandipbgt.com/theastrologer/api/horoscope/\(sign)/today"
         
