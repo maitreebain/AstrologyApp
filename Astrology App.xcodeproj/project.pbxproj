@@ -20,6 +20,7 @@
 		808839F12693EDC200B3A0BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 808839EF2693EDC200B3A0BE /* LaunchScreen.storyboard */; };
 		808839FC2693EDC300B3A0BE /* Astrology_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808839FB2693EDC300B3A0BE /* Astrology_AppTests.swift */; };
 		80883A072693EDC300B3A0BE /* Astrology_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80883A062693EDC300B3A0BE /* Astrology_AppUITests.swift */; };
+		80E6FADE2697BAEE0007E447 /* ZodiacModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E6FADD2697BAEE0007E447 /* ZodiacModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		80883A022693EDC300B3A0BE /* Astrology AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Astrology AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80883A062693EDC300B3A0BE /* Astrology_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astrology_AppUITests.swift; sourceTree = "<group>"; };
 		80883A082693EDC300B3A0BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80E6FADD2697BAEE0007E447 /* ZodiacModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZodiacModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				8073AE732694C6D800A5780C /* AstrologyAPIClient.swift */,
 				8073AE662694B25E00A5780C /* UserModel.swift */,
 				8073AE6E2694B26C00A5780C /* AstrologyModel.swift */,
+				80E6FADD2697BAEE0007E447 /* ZodiacModel.swift */,
 			);
 			path = "Models + APIClients";
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 			files = (
 				8073AE742694C6D800A5780C /* AstrologyAPIClient.swift in Sources */,
 				8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */,
+				80E6FADE2697BAEE0007E447 /* ZodiacModel.swift in Sources */,
 				808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */,
 				8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */,
 				8073AE6F2694B26C00A5780C /* AstrologyModel.swift in Sources */,

@@ -10,5 +10,5 @@ import UIKit
 struct UserModel {
     let name: String
     let sign: String
-    let date: Date
+    let date = Date()
 }

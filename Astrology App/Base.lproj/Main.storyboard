@@ -15,13 +15,84 @@
                     <view key="view" contentMode="scaleToFill" id="ksm-I4-lTm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-M9-flu">
+                                <rect key="frame" x="20.5" y="212" width="373" height="72"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="38"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Costar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0K-PQ-N84">
+                                <rect key="frame" x="20" y="308" width="374" height="19"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Please enter your name e.g. Eve" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yen-Ux-1qi">
+                                <rect key="frame" x="20" y="363" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your sun sign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3F-th-fHb">
+                                <rect key="frame" x="20" y="437" width="374" height="19"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-7O-hSv">
+                                <rect key="frame" x="20" y="476" width="374" height="224"/>
+                            </pickerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-uS-ylT">
+                                <rect key="frame" x="60" y="720" width="294" height="34"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="CAn-DS-v9F" eventType="touchUpInside" id="DsC-Be-0GQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="M2Y-mS-qau"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Yen-Ux-1qi" secondAttribute="trailing" constant="20" id="0Bb-tQ-BFV"/>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Y3F-th-fHb" secondAttribute="trailing" constant="20" id="52n-jb-4Ac"/>
+                            <constraint firstItem="SIu-uS-ylT" firstAttribute="top" secondItem="xKV-7O-hSv" secondAttribute="bottom" constant="20" id="7GL-C0-KrQ"/>
+                            <constraint firstItem="Yen-Ux-1qi" firstAttribute="top" secondItem="Z0K-PQ-N84" secondAttribute="bottom" constant="36" id="8R2-n2-sS1"/>
+                            <constraint firstItem="Yen-Ux-1qi" firstAttribute="centerX" secondItem="ksm-I4-lTm" secondAttribute="centerX" id="9Kf-rs-R9m"/>
+                            <constraint firstItem="xKV-7O-hSv" firstAttribute="top" secondItem="Y3F-th-fHb" secondAttribute="bottom" constant="20" id="D1B-zU-g29"/>
+                            <constraint firstItem="Z0K-PQ-N84" firstAttribute="top" secondItem="nmy-M9-flu" secondAttribute="bottom" constant="24" id="DkR-1W-1vr"/>
+                            <constraint firstItem="xKV-7O-hSv" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="EBN-KM-WQd"/>
+                            <constraint firstItem="xKV-7O-hSv" firstAttribute="height" secondItem="ksm-I4-lTm" secondAttribute="height" multiplier="0.25" id="GsQ-Mq-MX3"/>
+                            <constraint firstItem="nmy-M9-flu" firstAttribute="width" secondItem="ksm-I4-lTm" secondAttribute="width" multiplier="0.9" id="LIy-CW-Jyx"/>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Z0K-PQ-N84" secondAttribute="trailing" constant="20" id="SAB-cJ-8Kd"/>
+                            <constraint firstItem="nmy-M9-flu" firstAttribute="centerY" secondItem="ksm-I4-lTm" secondAttribute="centerY" constant="-200" id="T2Q-vE-mSl"/>
+                            <constraint firstItem="Y3F-th-fHb" firstAttribute="top" secondItem="Yen-Ux-1qi" secondAttribute="bottom" constant="40" id="V3S-a8-aCI"/>
+                            <constraint firstItem="SIu-uS-ylT" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="60" id="WPz-BR-odY"/>
+                            <constraint firstItem="Yen-Ux-1qi" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="eHp-qc-Xeg"/>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="xKV-7O-hSv" secondAttribute="trailing" constant="20" id="iOM-1F-nos"/>
+                            <constraint firstItem="Y3F-th-fHb" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="kkx-Wj-udh"/>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="SIu-uS-ylT" secondAttribute="trailing" constant="60" id="lMq-KD-8Xm"/>
+                            <constraint firstItem="nmy-M9-flu" firstAttribute="height" secondItem="ksm-I4-lTm" secondAttribute="height" multiplier="0.08" id="niM-SK-bQb"/>
+                            <constraint firstItem="nmy-M9-flu" firstAttribute="centerX" secondItem="ksm-I4-lTm" secondAttribute="centerX" id="r8Z-Tw-PyM"/>
+                            <constraint firstItem="Z0K-PQ-N84" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="veo-xP-W5G"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="costarLabel" destination="nmy-M9-flu" id="pbb-1M-JLc"/>
+                        <outlet property="nameTextField" destination="Yen-Ux-1qi" id="HTx-TX-LT5"/>
+                        <outlet property="signPicker" destination="xKV-7O-hSv" id="mXx-3r-WaE"/>
+                        <outlet property="submitButton" destination="SIu-uS-ylT" id="kSB-Yr-hgy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rP-2J-Trv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888" y="80"/>
+            <point key="canvasLocation" x="886.95652173913049" y="79.6875"/>
         </scene>
         <!--Sign-->
         <scene sceneID="6Bb-w1-Bt4">
@@ -59,8 +130,17 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
