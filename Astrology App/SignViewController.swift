@@ -35,6 +35,15 @@ class SignViewController: UIViewController {
 
 extension SignViewController: UITextFieldDelegate {
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        name = textField.text
+    }
+    
 }
 
 extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
@@ -51,11 +60,11 @@ extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let sign = signs[row]
+        let sign = signs[row].rawValue
         
             //currently this looks like "date - sign", when i require "sign"
         
-        var user = UserModel(name: name ?? "Anon", sign: sign.rawValue)
+        var user = UserModel(name: name ?? "Anon", sign: sign)
     }
 }
 
