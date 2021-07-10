@@ -8,22 +8,39 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet var imageView: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var signSummaryText: UITextView!
+    
+    var user: UserModel?
+    let apiClient = AstrologyAPIClient()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        getSign()
+        signSummaryText.delegate = self
+        dump(user)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getSign() {
+        
+        guard let user = user else { return }
+        apiClient.getSign(for: user.sign) { (result) in
+            
+            switch result {
+            case .success(let astrology):
+                self.title = astrology.sunsign
+            case .failure(let error):
+                //show alert
+                print("hekekel\(error)")
+            }
+        }
     }
-    */
 
+}
+
+extension DetailViewController: UITextViewDelegate {
+    
 }

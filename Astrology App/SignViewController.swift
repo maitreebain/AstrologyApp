@@ -16,6 +16,8 @@ class SignViewController: UIViewController {
     
     let signs = Zodiacs.allCases
     var name: String?
+    var zodiacSign: String?
+    var user: UserModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,17 @@ class SignViewController: UIViewController {
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         
         //segue to next view
+        user = UserModel(name: name ?? "Anon", sign: zodiacSign ?? "no Sign")
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+
+        guard let detailViewController = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController else {
+            //show alert?
+            print("cannot go to another view controller")
+            return
+        }
+        detailViewController.user = user
+        self.present(detailViewController, animated:true, completion:nil)
     }
     
     
@@ -61,11 +74,8 @@ extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let sign = signs[row].rawValue
-        let item = sign
-        
+        zodiacSign = sign
             //currently this looks like "date - sign", when i require "sign"
-        
-        var user = UserModel(name: name ?? "Anon", sign: item)
     }
 }
 
