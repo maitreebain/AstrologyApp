@@ -56,6 +56,13 @@
                                     <action selector="submitButtonPressed:" destination="CAn-DS-v9F" eventType="touchUpInside" id="DsC-Be-0GQ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6H-YO-q75">
+                                <rect key="frame" x="374" y="64" width="20" height="22"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" image="exclamationmark.circle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M2Y-mS-qau"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -63,6 +70,7 @@
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Yen-Ux-1qi" secondAttribute="trailing" constant="20" id="0Bb-tQ-BFV"/>
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Y3F-th-fHb" secondAttribute="trailing" constant="20" id="52n-jb-4Ac"/>
                             <constraint firstItem="SIu-uS-ylT" firstAttribute="top" secondItem="xKV-7O-hSv" secondAttribute="bottom" constant="20" id="7GL-C0-KrQ"/>
+                            <constraint firstItem="D6H-YO-q75" firstAttribute="top" secondItem="M2Y-mS-qau" secondAttribute="top" constant="20" id="7Qe-2K-b2k"/>
                             <constraint firstItem="Yen-Ux-1qi" firstAttribute="top" secondItem="Z0K-PQ-N84" secondAttribute="bottom" constant="36" id="8R2-n2-sS1"/>
                             <constraint firstItem="Yen-Ux-1qi" firstAttribute="centerX" secondItem="ksm-I4-lTm" secondAttribute="centerX" id="9Kf-rs-R9m"/>
                             <constraint firstItem="xKV-7O-hSv" firstAttribute="top" secondItem="Y3F-th-fHb" secondAttribute="bottom" constant="20" id="D1B-zU-g29"/>
@@ -72,6 +80,7 @@
                             <constraint firstItem="nmy-M9-flu" firstAttribute="width" secondItem="ksm-I4-lTm" secondAttribute="width" multiplier="0.9" id="LIy-CW-Jyx"/>
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Z0K-PQ-N84" secondAttribute="trailing" constant="20" id="SAB-cJ-8Kd"/>
                             <constraint firstItem="nmy-M9-flu" firstAttribute="centerY" secondItem="ksm-I4-lTm" secondAttribute="centerY" constant="-200" id="T2Q-vE-mSl"/>
+                            <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="D6H-YO-q75" secondAttribute="trailing" constant="20" id="Ufi-jq-YZG"/>
                             <constraint firstItem="Y3F-th-fHb" firstAttribute="top" secondItem="Yen-Ux-1qi" secondAttribute="bottom" constant="40" id="V3S-a8-aCI"/>
                             <constraint firstItem="SIu-uS-ylT" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="60" id="WPz-BR-odY"/>
                             <constraint firstItem="Yen-Ux-1qi" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="eHp-qc-Xeg"/>
@@ -154,6 +163,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="exclamationmark.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

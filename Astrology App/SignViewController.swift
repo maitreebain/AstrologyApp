@@ -61,10 +61,11 @@ extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let sign = signs[row].rawValue
+        let item = sign
         
             //currently this looks like "date - sign", when i require "sign"
         
-        var user = UserModel(name: name ?? "Anon", sign: sign)
+        var user = UserModel(name: name ?? "Anon", sign: item)
     }
 }
 
