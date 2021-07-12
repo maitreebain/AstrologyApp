@@ -16,15 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Costar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-M9-flu">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Astrologe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nmy-M9-flu">
                                 <rect key="frame" x="20.5" y="212" width="373" height="72"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color"/>
                                 <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="38"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Costar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0K-PQ-N84">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Astrologe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0K-PQ-N84">
                                 <rect key="frame" x="20" y="308" width="374" height="19"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -37,16 +37,18 @@
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your sun sign" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y3F-th-fHb">
                                 <rect key="frame" x="20" y="437" width="374" height="19"/>
-                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xKV-7O-hSv">
-                                <rect key="frame" x="20" y="476" width="374" height="224"/>
+                                <rect key="frame" x="20" y="476" width="374" height="179"/>
+                                <color key="backgroundColor" systemColor="systemGray3Color"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIu-uS-ylT">
-                                <rect key="frame" x="60" y="720" width="294" height="34"/>
+                                <rect key="frame" x="60" y="695" width="294" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
                                 <state key="normal" title="Submit">
@@ -65,18 +67,18 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M2Y-mS-qau"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Yen-Ux-1qi" secondAttribute="trailing" constant="20" id="0Bb-tQ-BFV"/>
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Y3F-th-fHb" secondAttribute="trailing" constant="20" id="52n-jb-4Ac"/>
-                            <constraint firstItem="SIu-uS-ylT" firstAttribute="top" secondItem="xKV-7O-hSv" secondAttribute="bottom" constant="20" id="7GL-C0-KrQ"/>
+                            <constraint firstItem="SIu-uS-ylT" firstAttribute="top" secondItem="xKV-7O-hSv" secondAttribute="bottom" constant="40" id="7GL-C0-KrQ"/>
                             <constraint firstItem="D6H-YO-q75" firstAttribute="top" secondItem="M2Y-mS-qau" secondAttribute="top" constant="20" id="7Qe-2K-b2k"/>
                             <constraint firstItem="Yen-Ux-1qi" firstAttribute="top" secondItem="Z0K-PQ-N84" secondAttribute="bottom" constant="36" id="8R2-n2-sS1"/>
                             <constraint firstItem="Yen-Ux-1qi" firstAttribute="centerX" secondItem="ksm-I4-lTm" secondAttribute="centerX" id="9Kf-rs-R9m"/>
                             <constraint firstItem="xKV-7O-hSv" firstAttribute="top" secondItem="Y3F-th-fHb" secondAttribute="bottom" constant="20" id="D1B-zU-g29"/>
                             <constraint firstItem="Z0K-PQ-N84" firstAttribute="top" secondItem="nmy-M9-flu" secondAttribute="bottom" constant="24" id="DkR-1W-1vr"/>
                             <constraint firstItem="xKV-7O-hSv" firstAttribute="leading" secondItem="M2Y-mS-qau" secondAttribute="leading" constant="20" id="EBN-KM-WQd"/>
-                            <constraint firstItem="xKV-7O-hSv" firstAttribute="height" secondItem="ksm-I4-lTm" secondAttribute="height" multiplier="0.25" id="GsQ-Mq-MX3"/>
+                            <constraint firstItem="xKV-7O-hSv" firstAttribute="height" secondItem="ksm-I4-lTm" secondAttribute="height" multiplier="0.2" id="GsQ-Mq-MX3"/>
                             <constraint firstItem="nmy-M9-flu" firstAttribute="width" secondItem="ksm-I4-lTm" secondAttribute="width" multiplier="0.9" id="LIy-CW-Jyx"/>
                             <constraint firstItem="M2Y-mS-qau" firstAttribute="trailing" secondItem="Z0K-PQ-N84" secondAttribute="trailing" constant="20" id="SAB-cJ-8Kd"/>
                             <constraint firstItem="nmy-M9-flu" firstAttribute="centerY" secondItem="ksm-I4-lTm" secondAttribute="centerY" constant="-200" id="T2Q-vE-mSl"/>
@@ -93,10 +95,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="costarLabel" destination="nmy-M9-flu" id="pbb-1M-JLc"/>
+                        <outlet property="astrologeLabel" destination="nmy-M9-flu" id="unJ-8u-IRh"/>
                         <outlet property="nameTextField" destination="Yen-Ux-1qi" id="HTx-TX-LT5"/>
                         <outlet property="signPicker" destination="xKV-7O-hSv" id="mXx-3r-WaE"/>
                         <outlet property="submitButton" destination="SIu-uS-ylT" id="kSB-Yr-hgy"/>
+                        <outlet property="sunsignLabel" destination="Y3F-th-fHb" id="ICZ-x7-foT"/>
+                        <outlet property="welcomeLabel" destination="Z0K-PQ-N84" id="2fc-Fa-7Wn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1rP-2J-Trv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -111,47 +115,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-s7-p41">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="video.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="zaJ-s7-p41">
                                 <rect key="frame" x="20" y="108.5" width="374" height="223"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aGd-uw-q4b">
-                                <rect key="frame" x="20" y="393" width="374" height="269"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="aGd-uw-q4b">
+                                <rect key="frame" x="20" y="391" width="374" height="269"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mood" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EjJ-bq-bvx">
-                                <rect key="frame" x="20" y="352" width="374" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="20" y="352" width="374" height="19"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coming soon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eUj-ZA-Wad">
+                                <rect key="frame" x="20" y="680" width="374" height="19"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aV0-Ua-uie">
+                                <rect key="frame" x="60" y="719" width="294" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <fontDescription key="fontDescription" name="HoeflerText-Regular" family="Hoefler Text" pointSize="22"/>
+                                <state key="normal" title="Watch a video about your sign ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitButtonPressed:" destination="CAn-DS-v9F" eventType="touchUpInside" id="KyP-hp-aN4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WVX-Px-Wc5"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="zaJ-s7-p41" firstAttribute="top" secondItem="WVX-Px-Wc5" secondAttribute="top" constant="20" id="00b-cR-755"/>
+                            <constraint firstItem="eUj-ZA-Wad" firstAttribute="top" secondItem="aGd-uw-q4b" secondAttribute="bottom" constant="20" id="2TW-h0-ZWL"/>
+                            <constraint firstItem="WVX-Px-Wc5" firstAttribute="trailing" secondItem="eUj-ZA-Wad" secondAttribute="trailing" constant="20" id="2te-ds-vhL"/>
+                            <constraint firstItem="eUj-ZA-Wad" firstAttribute="leading" secondItem="WVX-Px-Wc5" secondAttribute="leading" constant="20" id="3gf-hh-JHL"/>
                             <constraint firstItem="zaJ-s7-p41" firstAttribute="centerX" secondItem="ITT-0m-tLa" secondAttribute="centerX" id="4ru-sP-ZXr"/>
                             <constraint firstItem="zaJ-s7-p41" firstAttribute="height" secondItem="ITT-0m-tLa" secondAttribute="height" multiplier="0.25" id="9XZ-V6-3um"/>
                             <constraint firstItem="zaJ-s7-p41" firstAttribute="leading" secondItem="ITT-0m-tLa" secondAttribute="leading" constant="20" id="BYi-OF-7XK"/>
                             <constraint firstAttribute="trailing" secondItem="zaJ-s7-p41" secondAttribute="trailing" constant="20" id="PKM-5y-VJV"/>
                             <constraint firstItem="aGd-uw-q4b" firstAttribute="top" secondItem="EjJ-bq-bvx" secondAttribute="bottom" constant="20" id="UFd-RC-Svk"/>
+                            <constraint firstItem="WVX-Px-Wc5" firstAttribute="trailing" secondItem="aV0-Ua-uie" secondAttribute="trailing" constant="60" id="VMY-S9-bQx"/>
                             <constraint firstItem="WVX-Px-Wc5" firstAttribute="trailing" secondItem="aGd-uw-q4b" secondAttribute="trailing" constant="20" id="Vhz-a3-gN7"/>
                             <constraint firstItem="aGd-uw-q4b" firstAttribute="height" secondItem="ITT-0m-tLa" secondAttribute="height" multiplier="0.3" id="XaK-p1-hsk"/>
                             <constraint firstItem="aGd-uw-q4b" firstAttribute="leading" secondItem="WVX-Px-Wc5" secondAttribute="leading" constant="20" id="Z6J-uS-L8o"/>
                             <constraint firstItem="WVX-Px-Wc5" firstAttribute="trailing" secondItem="EjJ-bq-bvx" secondAttribute="trailing" constant="20" id="imI-Jn-BEC"/>
+                            <constraint firstItem="aV0-Ua-uie" firstAttribute="leading" secondItem="WVX-Px-Wc5" secondAttribute="leading" constant="60" id="oJ7-dz-ciT"/>
+                            <constraint firstItem="aV0-Ua-uie" firstAttribute="top" secondItem="eUj-ZA-Wad" secondAttribute="bottom" constant="20" id="qPo-46-Fw2"/>
                             <constraint firstItem="EjJ-bq-bvx" firstAttribute="leading" secondItem="WVX-Px-Wc5" secondAttribute="leading" constant="20" id="ufJ-v6-fyI"/>
                             <constraint firstItem="EjJ-bq-bvx" firstAttribute="top" secondItem="zaJ-s7-p41" secondAttribute="bottom" constant="20" id="xVv-ys-ldj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Sign" id="RD4-6W-FcK"/>
                     <connections>
+                        <outlet property="comingSoonLabel" destination="eUj-ZA-Wad" id="IUp-PG-LKD"/>
                         <outlet property="imageView" destination="zaJ-s7-p41" id="w1Q-7U-CId"/>
-                        <outlet property="nameLabel" destination="EjJ-bq-bvx" id="jLb-JB-mW1"/>
+                        <outlet property="moodLabel" destination="EjJ-bq-bvx" id="jLb-JB-mW1"/>
                         <outlet property="signSummaryText" destination="aGd-uw-q4b" id="gAx-jV-Umc"/>
+                        <outlet property="videoLabel" destination="aV0-Ua-uie" id="snf-CW-HqH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d2a-6g-NXd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -166,6 +198,11 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3SR-Vi-HMl">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
+                        <color key="barTintColor" systemColor="labelColor"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" systemColor="labelColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -183,14 +220,20 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray4Color">
             <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum Zodiacs: String, CaseIterable {
+enum Zodiac: String, CaseIterable {
     case aries = "Aries"
     case taurus = "Taurus"
     case gemini = "Gemini"

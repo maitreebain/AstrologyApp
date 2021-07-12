@@ -9,28 +9,48 @@ import UIKit
 
 class SignViewController: UIViewController {
     
-    @IBOutlet var costarLabel: UILabel!
+    @IBOutlet var astrologeLabel: UILabel!
+    @IBOutlet var welcomeLabel: UILabel!
     @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var sunsignLabel: UILabel!
     @IBOutlet var signPicker: UIPickerView!
     @IBOutlet var submitButton: UIButton!
     
-    let signs = Zodiacs.allCases
+    let signs = [Zodiac.aries.rawValue, Zodiac.taurus.rawValue, Zodiac.gemini.rawValue, Zodiac.cancer.rawValue, Zodiac.leo.rawValue, Zodiac.virgo.rawValue, Zodiac.libra.rawValue, Zodiac.scorpio.rawValue, Zodiac.sagittarius.rawValue, Zodiac.capricorn.rawValue, Zodiac.aquarius.rawValue, Zodiac.pisces.rawValue]
+    
+    var selectedSign = Zodiac.aries.rawValue
     var name: String?
-    var zodiacSign: String?
     var user: UserModel?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        UIupdates()
         nameTextField.delegate = self
         signPicker.delegate = self
+    }
+    
+    func UIupdates() {
+        astrologeLabel.layer.masksToBounds = true
+        welcomeLabel.layer.masksToBounds = true
+        nameTextField.layer.masksToBounds = true
+        sunsignLabel.layer.masksToBounds = true
+        signPicker.layer.masksToBounds = true
+        submitButton.layer.masksToBounds = true
+        astrologeLabel.layer.cornerRadius = 8
+        welcomeLabel.layer.cornerRadius = 4
+        nameTextField.layer.cornerRadius = 8
+        sunsignLabel.layer.cornerRadius = 4
+        signPicker.layer.cornerRadius = 8
+        submitButton.layer.cornerRadius = 8
     }
 
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         
         //segue to next view
-        user = UserModel(name: name ?? "Anon", sign: zodiacSign ?? "no Sign")
+        user = UserModel(name: name ?? "Anon", sign: selectedSign)
         
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
 
@@ -40,7 +60,7 @@ class SignViewController: UIViewController {
             return
         }
         detailViewController.user = user
-        self.present(detailViewController, animated:true, completion:nil)
+        self.present(UINavigationController(rootViewController: detailViewController), animated:true, completion:nil)
     }
     
     
@@ -69,12 +89,12 @@ extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return signs[row].rawValue
+        return signs[row]
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let sign = signs[row].rawValue
-        zodiacSign = sign
+        let sign = signs[row]
+        selectedSign = sign
     }
 }
 

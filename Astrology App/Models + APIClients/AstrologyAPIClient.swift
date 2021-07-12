@@ -25,7 +25,6 @@ struct AstrologyAPIClient {
             
             if let data = data {
                 do {
-                    print(String.init(decoding: data, as: UTF8.self))
                     let zodiac = try JSONDecoder().decode(AstrologyModel.self, from: data)
                     completion(.success(zodiac))
                 } catch {

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE562694A3EB00A5780C /* TypesViewController.swift */; };
 		8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE5D2694A44700A5780C /* DetailViewController.swift */; };
 		8073AE672694B25E00A5780C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE662694B25E00A5780C /* UserModel.swift */; };
 		8073AE6F2694B26C00A5780C /* AstrologyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8073AE6E2694B26C00A5780C /* AstrologyModel.swift */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8073AE562694A3EB00A5780C /* TypesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypesViewController.swift; sourceTree = "<group>"; };
 		8073AE5D2694A44700A5780C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8073AE662694B25E00A5780C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		8073AE6E2694B26C00A5780C /* AstrologyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstrologyModel.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				808839E62693EDC100B3A0BE /* SceneDelegate.swift */,
 				80AA58152694D544008CC150 /* Models + APIClients */,
 				808839E82693EDC100B3A0BE /* SignViewController.swift */,
-				8073AE562694A3EB00A5780C /* TypesViewController.swift */,
 				8073AE5D2694A44700A5780C /* DetailViewController.swift */,
 				808839EA2693EDC100B3A0BE /* Main.storyboard */,
 				808839ED2693EDC200B3A0BE /* Assets.xcassets */,
@@ -292,7 +289,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8073AE742694C6D800A5780C /* AstrologyAPIClient.swift in Sources */,
-				8073AE572694A3EB00A5780C /* TypesViewController.swift in Sources */,
 				80E6FADE2697BAEE0007E447 /* ZodiacModel.swift in Sources */,
 				808839E92693EDC100B3A0BE /* SignViewController.swift in Sources */,
 				8073AE5E2694A44700A5780C /* DetailViewController.swift in Sources */,
