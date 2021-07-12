@@ -12,7 +12,7 @@ struct AstrologyAPIClient {
     
     func getSign(for sign: String, completion: @escaping (Result<AstrologyModel, Error>) -> ()) {
         
-        let endpoint = "http://sandipbgt.com/theastrologer/api/horoscope/\(sign)/today"
+        let endpoint = "http://sandipbgt.com/theastrologer/api/horoscope/\(sign.lowercased())/today"
         
         guard let url = URL(string: endpoint) else {
             print("no url found")
@@ -25,8 +25,8 @@ struct AstrologyAPIClient {
             
             if let data = data {
                 do {
+                    print(String.init(decoding: data, as: UTF8.self))
                     let zodiac = try JSONDecoder().decode(AstrologyModel.self, from: data)
-                    print("hot")
                     completion(.success(zodiac))
                 } catch {
                     completion(.failure(error))
@@ -35,4 +35,5 @@ struct AstrologyAPIClient {
         }
         datatask.resume()
     }
+    
 }

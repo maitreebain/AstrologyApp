@@ -20,27 +20,22 @@ class DetailViewController: UIViewController {
         super.viewDidLoad()
         
         getSign()
-        signSummaryText.delegate = self
-        dump(user)
     }
     
     func getSign() {
-        
         guard let user = user else { return }
         apiClient.getSign(for: user.sign) { (result) in
             
             switch result {
             case .success(let astrology):
-                self.title = astrology.sunsign
+                DispatchQueue.main.async {
+                    self.nameLabel.text = "Mood: \(astrology.meta.mood)"
+                    self.signSummaryText.text = astrology.horoscope
+                }
             case .failure(let error):
-                //show alert
-                print("hekekel\(error)")
+                print("\(error)")
             }
         }
     }
 
-}
-
-extension DetailViewController: UITextViewDelegate {
-    
 }

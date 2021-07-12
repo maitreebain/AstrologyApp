@@ -75,7 +75,6 @@ extension SignViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let sign = signs[row].rawValue
         zodiacSign = sign
-            //currently this looks like "date - sign", when i require "sign"
     }
 }
 

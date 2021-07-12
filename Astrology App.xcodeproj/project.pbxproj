@@ -173,6 +173,8 @@
 			dependencies = (
 			);
 			name = "Astrology App";
+			packageProductDependencies = (
+			);
 			productName = "Astrology App";
 			productReference = 808839E12693EDC100B3A0BE /* Astrology App.app */;
 			productType = "com.apple.product-type.application";
@@ -244,6 +246,8 @@
 				Base,
 			);
 			mainGroup = 808839D82693EDC100B3A0BE;
+			packageReferences = (
+			);
 			productRefGroup = 808839E22693EDC100B3A0BE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
